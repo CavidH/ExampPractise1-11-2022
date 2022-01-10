@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/Assets/Style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+
+        <section id=headbar>
+            <div id="headbar" class="d-flex">
+                <div class="container d-flex justify-content-center justify-content-md-between m-2">
+                    <div class="contact-info  ">
+                        <i class="far fa-envelope  ">
+                            <a class="cncinfo"
+                               href="mailto:contact@example.com">contact@example.com</a>
+                        </i>
+                        <i class="far fa-envelope   "></i><span class="cncinfo">+1 5589 55488 55</span>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id=Navbar>
+            <div class="navbar d-flex align-items-center">
+                <div class="container d-flex justify-content-between align-items-center">
+
+                    <div class="logo">
+                        <h1><a href="#">Eterna</a></h1>
+                    </div>
+                    <div class="navbar d-flex">
+                        <ul class="navbarul d-flex ">
+                            <li><a class="active  menutxt" href="index.html">Home</a></li>
+                            <li><a class="menutxt" href="about.html">About</a></li>
+                            <li><a class="menutxt" href="services.html">Services</a></li>
+                            <li><a class="menutxt" href="portfolio.html">Portfolio</a></li>
+                            <li><a class="menutxt" href="team.html">Team</a></li>
+                            <li><a class="menutxt" class="menutxt" href="pricing.html">Pricing</a></li>
+                            <li><a class="menutxt" href="blog.html">Blog</a></li>
+                            <li><a class="menutxt" href="contact.html">Contact</a></li>
+                            <li  class="menutxt" class="dropdown"><a href="#"><span>Drop Down</span> </a></li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+        @RenderBody()
+
+        <section class="footer">
+            <div class="container   mt-5 p-5">
+                <div class="subscribe">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <h4 class="footertxt">Our Newsletter</h4>
+                            <p class="footertxt">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        </div>
+                        <div class="col-lg-5">
+                            <form action="" method="post">
+                                <input type="email" name="email"><input type="submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-left">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4 class="footertxt">Useful Links</h4>
+                                <ul class="footerul">
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">Home</a></li>
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">About us</a></li>
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">Services</a></li>
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">Terms of service</a></li>
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">Privacy policy</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4 class="footertxt">Our Services</h4>
+                                <ul class="footerul">
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">Web Design</a></li>
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">Web Development</a></li>
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">Product Management</a></li>
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">Marketing</a></li>
+                                    <li><i class="fas fa-chevron-right"></i> <a class="footertxt" href="#">Graphic Design</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-contact">
+                                <h4 class="footertxt">Contact Us</h4>
+                                <p class="footertxt">
+                                    A108 Adam Street <br>
+                                    New York, NY 535022<br>
+                                    United States <br><br>
+                                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                                    <strong>Email:</strong> info@example.com<br>
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-info">
+                                <h3 class="footertxt">About Eterna</h3>
+                                <p class="footertxt">Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                                <div class="social  mt-3">
+                                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="google-plus"><i class="fab fa-skype"></i></a>
+                                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://kit.fontawesome.com/3818e49a5f.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+                crossorigin="anonymous"></script>
+        <script src="~/Assets/Js/script.js"></script>
+</body>
+
+</html>

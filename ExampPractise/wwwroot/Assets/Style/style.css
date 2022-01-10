@@ -1,0 +1,157 @@
+#headbar{
+    background-color: #545454;
+}
+.social a{
+color: #BABABA;
+margin-left: 10px;
+}
+.contact-info i{
+    margin-left: 15px;
+    color:#D15C54;
+}
+.menutxt {
+    text-decoration: none;
+}
+.cncinfo {
+    color: white;
+}
+.logo a{
+    color:#545454;
+}
+.navbar{
+    background-color: #F7F7F7 ;
+}
+.navbarul{
+     
+    list-style-type: none;
+}
+.navbarul a{
+    color: #545454;
+    padding: 15px;
+   
+}
+.navbarul a:hover{
+    color: #E96B56;
+   
+}
+.carousel-control-prev-iconv{
+    color:red !important; 
+}
+.slider{
+    width: max-content;
+    height: 610px;
+  
+}
+.carousel-item{
+    height: 660px;
+}
+.carousel-caption h2{
+    color:#E96B56;
+}
+.carousel-caption {
+     margin-bottom: 14%  ; 
+}
+.carousel-caption p{
+    color:black;
+}
+.carousel-caption a{
+    color:#fff;
+  border-color:#E96B56;
+  background-color:#E96B56;
+  border-radius: 20px;
+}
+.carousel-caption a:hover {
+    background-color:#fff;
+    color:#E96B56;    
+  }
+.card{
+    
+    margin-left: 15px;
+    border-radius: 50%;
+
+}
+.card :hover{
+    background-color: #E96B56 ;
+
+}
+.card-body i{
+    color: #E96B56 ;
+    font-size: 40px;
+}
+.card-body i{
+    color: #E96B56 ;
+    font-size: 40px;
+}
+.card :hover   i{
+    color: #fff ;
+    
+}
+.card :hover   p{
+    color: #fff ;
+    
+}
+.card :hover h5{
+    color: #fff ;
+    
+}
+/* .card-body p,h5{
+    color: black;
+}
+.card-body :hover i,p,h5{
+    color: #FFF ;
+   
+} */
+.card{
+    border: none !important;;
+}
+.card-body{
+border-radius: 15px;
+    /* box-shadow: 1px 1px 1px rgb(189, 186, 186);
+   */
+   box-shadow: 0px 0px 5px rgb(189, 186, 186);
+}
+.aboutul{
+    list-style: none;
+}
+.aboutul i{
+    color:#E96B56  ;
+}
+.icon-card{
+    box-shadow: 0px 0px 5px rgb(189, 186, 186);
+}
+.icon-card:hover{
+background-color: #E96B56 ;
+}
+.myicon{
+    display:inline;
+    background-color:   #E96B56;
+}
+.fa-dribbble{
+    color: #fff;
+    font-size: 30px;
+}
+.serviceheadtxt{
+    color: black;
+}
+
+.footer{
+    background-color: #404040;
+}
+.footertxt{
+    color: #fff;
+}
+.footerul li{
+    list-style: none;
+}
+.fa-chevron-right{
+   color: #E96B56 ;
+}
+/* .footer-left{
+    background-color:#3B3B3B;
+} */
+
+.dribbble {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px
+}
