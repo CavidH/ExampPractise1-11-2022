@@ -1,5 +1,4 @@
-﻿
-
+﻿@model HomeVM
 <section id=slider>
     <div class="slider">
         <div class="row d-flex  justify-content-center">
@@ -13,7 +12,7 @@
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="~/Assets/Img/slide-1.jpg" alt="First slide">
                         <div class="carousel-caption  ">
-                            <h2>
+                            <h5>
                                 Sequi ea Dime Lara</h5>
                                 <p>
                                     Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat
@@ -28,7 +27,7 @@
                         <img class="d-block w-100" src="~/Assets/Img/slide-2.jpg" alt="Second slide">
                         <div class="carousel-caption  ">
                             <h2>
-                                Welcome to Eterna</h5>
+                                Welcome to Eterna</h2>
                                 <p>
                                     Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat
                                     sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
@@ -42,7 +41,7 @@
                         <img class="d-block w-100" src="~/Assets/Img/slide-3.jpg" alt="Third slide">
                         <div class="carousel-caption ">
                             <h2>
-                                Lorem Ipsum Dolor</h5>
+                                Lorem Ipsum Dolor</h2>
                                 <p>
                                     Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat
                                     sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea
@@ -64,41 +63,24 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </div>
+        </div></div>
 </section>
 <section id=featured>
     <div class="container cardss mt-5">
         <div class="headcards d-flex  mt-5   align-items-center ">
-            <div class="card col-4  " style="width: 20rem;">
-                <div class="card-body">
-                    <i class="fas fa-tasks"></i>
-                    <h5 class="card-title">Lorem Ipsum</h5>
-                    <p class="card-text">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </p>
+            
+            @foreach (var Featuredcard in Model.FeatureCards)
+            {
+                <div class="card col-4  " style="width: 20rem;">
+                    <div class="card-body">
+                        @Html.Raw(Featuredcard.IconLink)
+                        <h5 class="card-title">@Featuredcard.Title</h5>
+                        <p class="card-text">
+                            @Featuredcard.Content
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="card  col-4" style="width: 20rem;">
-                <div class="card-body">
-                    <i class="fas fa-chart-bar  "></i>
-                    <h5 class="card-title">Dolor Sitema</h5>
-                    <p class="card-text">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </p>
-                </div>
-            </div>
-            <div class="card  col-4" style="width: 20rem;">
-                <div class="card-body">
-                    <i class="fas fa-binoculars"></i>
-                    <h5 class="card-title">Sed ut perspiciatis</h5>
-                    <p class="card-text">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </p>
-                </div>
-            </div>
+            }
         </div>
     </div>
 </section>
