@@ -42,11 +42,17 @@ namespace ExampPractise
             }
 
             app.UseRouting();
+            
             app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapDefaultControllerRoute();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{area:exists}/{controller=AdminDashboard}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
